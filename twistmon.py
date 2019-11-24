@@ -80,7 +80,7 @@ def ParseData(data):
         body += "\r\nADDED:"
         for a in diff['added']:
             for key, val in a.items():
-                body += key + ": \t" + val
+                body += "\r\n\t" + key + ": \t" + val
             body += "\r\n"
 
     if not diff['removed'] == []:
